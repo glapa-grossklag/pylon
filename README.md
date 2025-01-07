@@ -12,23 +12,25 @@ Python is (on it's own) a slightly less-than-excellent language for managing a d
 
 A code snippet is worth one thousand words.
 
-    #!/usr/bin/env pylon
-    """
-    hello.py
+````python
+#!/usr/bin/env pylon
+"""
+Notice the shebang (#!) above, to run with a dot slash.
 
-    Say hello to the world or to someone you love.
+Notice the requirements below, to feel okay when depending on others.
 
-    ```requirements
-    rich
-    ```
-    """
-    import rich
-    import sys
+```requirements
+rich
+```
+"""
+import rich
+import sys
 
-    name = "world" if len(sys.argv) < 2 else sys.argv[1]
-    rich.print(f"Hello, [blue]{name}[/]!")
+name = "world" if len(sys.argv) < 2 else sys.argv[1]
+rich.print(f"Hello, [blue]{name}[/]!")
+````
 
-The first time you run `hello.py`, `pylon` will install the requirements given and run the script.
+The first time you run the script above, `pylon` will install the requirements given and run the script.
 The next time, you won't have to wait for an installation.
 Until, of course, you add another!
 
