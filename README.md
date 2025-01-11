@@ -4,7 +4,7 @@ Python is an excellent language for writing one-off scripts.
 
 However, sometimes your one-off scripts have a dependency or two.
 
-Python is a less-than-excellent language for managing a dependencies.
+Python is a less-than-excellent language for managing dependencies.
 
 `pylon` allows you to quickly and effortlessly run one-off Python scripts with dependencies.
 
